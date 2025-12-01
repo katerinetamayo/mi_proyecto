@@ -2,16 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Bienvenido</title>
+    <title>Inicio</title>
 </head>
 <body>
     <h1>🎉 Bienvenido a mi proyecto en Render 🎉</h1>
-    <p>Selecciona una sección:</p>
 
+    <h3>Opciones disponibles:</h3>
     <ul>
-        {% for url in urls %}
-            <li><a href="{{ url.path }}">{{ url.name }}</a></li>
-        {% endfor %}
+        <li><a href="/productos/">Ver lista de productos</a></li>
+        <li><a href="/productos/crear/">Crear un nuevo producto</a></li>
+        <li><a href="/admin/">Administración Django</a></li>
     </ul>
 </body>
 </html>
