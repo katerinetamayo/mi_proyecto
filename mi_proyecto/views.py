@@ -1,8 +1,7 @@
 from django.shortcuts import render
 
-from django.shortcuts import render
-
 def home(request):
+    # Definimos los enlaces que aparecerán en la página de inicio
     urls = [
         {"path": "/admin/", "name": "Administración Django"},
         {"path": "/productos/", "name": "Lista de productos"},
