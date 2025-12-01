@@ -1,17 +1,37 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'tienda/css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 700px;
+        }
+    </style>
 </head>
 <body>
-    <h1>🎉 Bienvenido a mi proyecto en Render 🎉</h1>
-    <p>Selecciona una sección:</p>
+    <div class="container text-center">
+        <h1 class="mb-4">🎉 Bienvenido a mi proyecto en Render 🎉</h1>
+        <p class="lead mb-4">Selecciona una sección:</p>
 
-    <ul>
-        {% for url in urls %}
-            <li><a href="{{ url.path }}">{{ url.name }}</a></li>
-        {% endfor %}
-    </ul>
+        <ul class="list-group">
+            {% for url in urls %}
+                <li class="list-group-item">
+                    <a href="{{ url.path }}">{{ url.name }}</a>
+                </li>
+            {% empty %}
+                <li class="list-group-item">No hay secciones disponibles</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="{% static 'tienda/js/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>
