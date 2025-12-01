@@ -1,0 +1,67 @@
+PREPARACION DEL ENTORNO
+
+Instalar Python 3.
+
+Instalar Visual Studio Code (u otro editor).
+
+Tener el script SQL de la base de datos.
+
+Guardar la plantilla HTML de Bootstrap.
+
+Hacer copia de seguridad de la BD.
+
+CONFIGURACION INICIAL
+
+Entrar a la carpeta del proyecto.
+
+Crear entorno virtual → python -m venv venv.
+
+Activar entorno virtual.
+
+Instalar Django → pip install django.
+
+Crear proyecto → django-admin startproject mi_proyecto.
+
+Abrir en VS Code.
+
+CONFIGURACION DE BASE DE DATOS 
+
+Configurar conexión a la BD en settings.py.
+
+Instalar conector (ej. pip install mysqlclient).
+
+Ejecutar migraciones (makemigrations + migrate).
+
+Verificar tablas en Workbench.
+
+CREAR APLICACION
+
+Crear app → python manage.py startapp tienda.
+
+Registrar la app en INSTALLED_APPS.
+
+Mapear tablas con inspectdb si ya existe BD.
+
+ADMINISTRACION
+
+Crear superusuario → python manage.py createsuperuser.
+
+Registrar modelos en admin.py.
+
+Ejecutar servidor → python manage.py runserver.
+
+CRUD
+
+models.py → definir modelos/tablas.
+
+admin.py → registrar modelos.
+
+forms.py → definir formularios.
+
+views.py → funciones CRUD (listar, crear, editar, eliminar).
+
+urls.py (app) → rutas CRUD.
+
+urls.py (proyecto) → incluir rutas de la app.
+
+templates/ → crear plantillas HTML (base, lista, form, confirmar eliminar).

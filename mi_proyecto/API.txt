@@ -1,0 +1,37 @@
+Prerequisitos
+
+- Crear el proyecto Django.
+- Crear y activar el entorno virtual.
+
+PASO A PASO GENERAL
+1. Instalar Django REST Framework
+pip install djangorestframework
+
+2. Registrar las apps en settings.py
+Agregar rest_framework y la app creada.
+
+3. Crear el serializador (serializers.py)
+
+Define cómo se convierte el modelo a JSON.
+
+4. Crear las vistas (views.py)
+
+Controlan las operaciones CRUD de la API.
+
+5. Crear las rutas (urls.py)
+
+Conectan las URL con las vistas para usar la API.
+
+PRUEBAS CON HOPPSCOTCH (RESUMEN)
+1. Instalar / Abrir Hoppscotch
+
+Versión web o app:
+https://hoppscotch.com
+
+2. Crear una cuenta
+
+Para guardar colecciones de pruebas.
+
+3. Crear una solicitud y probar métodos HTTP
+
+GET, POST, PUT, PATCH, DELETE.
