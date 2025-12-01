@@ -8,4 +8,4 @@ def home(request):
         {"path": "/productos/crear/", "name": "Crear producto"},
         {"path": "/productos/api/", "name": "API DRF productos"},
     ]
-    return render(request, "home.html", {"urls": urls})
+    return render(request, "tienda/home.html", {"urls": urls})
