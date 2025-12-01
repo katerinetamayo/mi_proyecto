@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Inicio</title>
-</head>
-<body>
-    <h1>🎉 Bienvenido a mi proyecto en Render 🎉</h1>
-    <p>Selecciona una sección:</p>
+<h1>🎉 Bienvenido a mi proyecto en Render 🎉</h1>
+<p>Selecciona una sección:</p>
 
-    <ul>
-        {% for url in urls %}
-            <li><a href="{{ url.path }}">{{ url.name }}</a></li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
+<ul>
+    {% for url in urls %}
+        <li><a href="{{ url.path }}">{{ url.name }}</a></li>
+    {% endfor %}
+</ul>

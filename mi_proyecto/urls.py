@@ -3,11 +3,7 @@ from django.urls import path, include
 from .views import home
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-
-    # Página principal del sitio
-    path('', home, name='home'),
-
-    # Rutas de la app tienda
-    path('productos/', include('tienda.urls')),
+    path("", home, name="home"),                # Página principal
+    path("admin/", admin.site.urls),            # Admin Django
+    path("productos/", include("tienda.urls")), # Todas las URLs de la app
 ]
